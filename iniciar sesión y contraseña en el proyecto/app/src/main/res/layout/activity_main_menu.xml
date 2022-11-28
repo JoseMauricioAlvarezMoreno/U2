@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:backgroundTint="#7903A9F4"
+    android:foregroundTint="#FFEB3B"
+    tools:context=".main_menu">
+
+    <ImageButton
+        android:id="@+id/btn_lib"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="41dp"
+        android:backgroundTint="#F7FFFFFF"
+        android:onClick="libros"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_cam"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_cam"
+        app:srcCompat="@drawable/libros" />
+
+    <ImageButton
+        android:id="@+id/btn_cb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="41dp"
+        android:backgroundTint="#F8FFFFFF"
+        android:onClick="CB"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_qr"
+        app:layout_constraintEnd_toStartOf="@+id/btn_qr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_qr"
+        app:srcCompat="@drawable/scannercb" />
+
+    <ImageButton
+        android:id="@+id/btn_cs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="168dp"
+        android:backgroundTint="#F8FFFFFF"
+        android:onClick="close_sesion"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_ub"
+        app:layout_constraintTop_toBottomOf="@+id/btn_qr"
+        app:srcCompat="@drawable/close_sesion" />
+
+    <ImageButton
+        android:id="@+id/btn_qr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#FCFFFFFF"
+        android:onClick="QR"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cb"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cam"
+        app:srcCompat="@drawable/scannerqr" />
+
+    <ImageButton
+        android:id="@+id/btn_ub"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="41dp"
+        android:backgroundTint="#FCFFFFFF"
+        android:onClick="ubicacion"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_cs"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_cs"
+        app:srcCompat="@drawable/ubication" />
+
+    <ImageButton
+        android:id="@+id/btn_cam"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="43dp"
+        android:backgroundTint="#F8FFFFFF"
+        android:onClick="camara"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/btn_qr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_lib"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/photo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="444dp"
+        android:rotationX="8"
+        android:rotationY="0"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mneu" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="380dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/decoracion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

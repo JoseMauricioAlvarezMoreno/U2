@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#040303"
+    tools:context=".terror">
+
+
+    <ImageButton
+        android:id="@+id/libro6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="119dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/libro5"
+        app:layout_constraintTop_toBottomOf="@+id/libro4"
+        app:srcCompat="@drawable/agregar_libro" />
+
+    <ImageButton
+        android:id="@+id/libro5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="119dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/libro6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/libro3"
+        app:srcCompat="@drawable/agregar_libro" />
+
+    <ImageButton
+        android:id="@+id/libro4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/libro6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/libro3"
+        app:layout_constraintTop_toBottomOf="@+id/libro2"
+        app:srcCompat="@drawable/agregar_libro" />
+
+    <ImageButton
+        android:id="@+id/libro3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/libro5"
+        app:layout_constraintEnd_toStartOf="@+id/libro4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/libro1"
+        app:srcCompat="@drawable/biografias" />
+
+    <ImageButton
+        android:id="@+id/libro1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="42dp"
+        android:onClick="libro1"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/libro3"
+        app:layout_constraintEnd_toStartOf="@+id/libro2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/biografias" />
+
+    <ImageButton
+        android:id="@+id/libro2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/libro4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/libro1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/biografias" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TERROR"
+        android:textColor="#FAF9F9"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Codigo_barras">
+
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#9F2196F3"
+        android:onClick="scanCode"
+        app:srcCompat="@drawable/scanner_btn" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
